@@ -1,0 +1,100 @@
+
+.primary {
+    background: white;
+    color: black;
+    border-width: 1px;
+    border-radius: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    transition: background 2s, color 2s;
+}
+
+.outline {
+    background: transparent;
+    color: white;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    transition: background 2s, color 2s;
+}
+
+.primary:hover {
+    background: transparent;
+    color: white;
+}
+
+
+.outline:hover {
+    background: white;
+    color: black;
+}
+
+.hero-button {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 4px;
+    margin-right: 4px;
+    width: 30vw;
+    height: 4vw;
+    max-width: 250px;
+    max-height: 100px;
+    min-width: 50px;
+    min-height: 25px;
+    font-size: 1.3rem;
+}
+
+.not-found {
+    background: black;
+    color: white;
+    border-width: 1px;
+    border-radius: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    transition: background 2s, color 2s;
+    width: 8vw;
+    height: 5vh;
+    font-size: 1vw;
+    margin-top: 20px;
+}
+
+.not-found:hover {
+    background: grey;
+    color: black;
+}
+
+.full {
+    width: 100%;
+}
+
+.full-height {
+    height: 100%;
+    text-decoration-line: none;
+}
+
+/*mobile view*/
+@media (max-width: 1000px) {
+    .hero-button {
+        font-size: clamp(0.6rem, 1vw, 3rem);
+    }
+
+    .full-height {
+        height: 27px;
+        width: 100%;
+        display: block;
+    }
+
+    .not-found {
+        margin-top: 10px;
+        width: 200px;
+        height: 50px;
+        font-size: 1rem;
+    }
+}

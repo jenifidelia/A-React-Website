@@ -1,0 +1,11 @@
+.products-container {
+    background-image: url('../../../public/images/img-10.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    font-size: 8vw;
+    color: white;
+    vertical-align: middle;
+    line-height: 100vh;
+}

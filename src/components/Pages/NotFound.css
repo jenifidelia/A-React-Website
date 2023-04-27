@@ -1,0 +1,54 @@
+.not-found-container {
+    background-image: url('../../../public/images/van.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.head-text {
+    font-family: 'PT Serif', serif;
+    padding: 0px;
+    text-align: left;
+}
+
+.subtext {
+    font-family: 'PT Serif', serif;
+    font-style: italic;
+    text-align: left;
+}
+
+
+/*web view*/
+@media (min-width: 1000px) {
+    .content {
+        position: relative;
+        top: 23%;
+        left:45%;
+    }
+
+    .subtext{
+        font-size: 2vw;
+    }
+
+    .head-text {
+        font-size: 4vw;
+    }
+}
+
+/*mobile view*/
+@media (max-width: 1000px) {
+    .head-text {
+        font-size: 2.2rem;
+    }
+
+    .subtext {
+        font-size: 1.2rem;
+    }
+
+    .content {
+        position: relative;
+        top: 20%;
+        margin: auto;
+        width: 80%;
+    }
+}

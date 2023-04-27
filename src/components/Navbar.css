@@ -1,0 +1,172 @@
+.navbar {
+    /*
+    position: fixed;
+    width: 100%;
+    */
+
+    position: sticky;
+    top: 0px;
+    z-index:10;
+}
+
+.navbar-container {
+    background-color: #1a1717;
+    padding: 15px;
+    padding-bottom: 0px;
+
+    /*
+    position: fixed;
+    width: 100%;
+    */
+}
+
+.logo-and-menu-container {
+    display: inline;
+    position: relative;
+    bottom: 5px;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hamburger-menu {
+    color: white;
+    cursor: pointer
+}
+
+ul {
+    display: inline;
+    list-style: none;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding:0px;
+}
+
+.navlink {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+}
+
+
+.link-container-web {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.link-container-mobile {
+    display: block;
+    height: 100vh;
+    /*height: max-content;*/
+    background-color: #242222;
+    padding-top: 10px; 
+    width:100%;
+    animation-name: entrance-animation;
+    animation-duration : 1s;
+    opacity: 1;
+    transition: ease-in-out;
+}
+
+@keyframes entrance-animation {
+    from {
+        opacity: 0.01;
+        transform: translate(-110%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+/*mobile view*/
+@media (max-width: 1000px) {
+    ul {
+        display: block;
+        list-style: none;
+        text-decoration: none;
+        text-align: center;
+        margin: 20px;
+    }
+
+    .navlink {
+        width: 100%;
+        transition: color 2s, background 2s;
+        font-size: 1rem;
+    }
+
+    .navlink:hover {
+        background: white;
+        color: black;
+    }
+
+    .sign-up-button-container {
+        display: block;
+        width: 40%;
+        margin: auto;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+    .navbar-container {
+        padding-bottom: 5px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .logo-and-menu-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+
+
+/*web view*/
+@media (min-width: 1000px) {
+    
+    .logo {
+        color: white;
+        text-decoration: none;
+        font-size: 1.3rem;
+        margin-top: 2px;
+        position: relative;
+        top: 4px;
+        cursor: pointer;
+    }
+    
+    .navlink:hover {
+        border-top-style: none;
+        border-right-style: none;
+        border-left-style: none;
+        border-bottom-style: solid;
+        border-width: 3px;
+        border-color: white;
+        position: relative;
+        bottom: 2px;
+        cursor: pointer;
+    }
+
+    .navbar-container {
+       background-color: #1a1717;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
